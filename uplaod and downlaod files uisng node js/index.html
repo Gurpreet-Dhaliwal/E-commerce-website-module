@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title> test </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+    <body>
+        <form action="/fileupload" method="POST" enctype="multipart/form-data">
+            <fieldset>
+                <label for="name">Name: </label>
+                <input type="file" id="filetoupload" name="filetoupload"  accept="application/pdf"  autofocus />
+                <br/>
+             
+                <br/>
+                <input type="submit" value="upload file" name = "uploadfile" />
+            </fieldset>
+        </form>
+
+
+        <form action="/filedownload" method="GET" >
+            <fieldset>
+              
+                <br/>
+                <input type="submit" value="downlaod file" name = "downloadfile" />
+            </fieldset>
+        </form>
+    </body>
+</html>
